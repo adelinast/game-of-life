@@ -62,7 +62,6 @@ def get_number_neighbours_cell(nr_rows, nr_cols, grid, row, column):
     
 def next_generation_value(nr_rows, nr_cols, grid, row, column):
     nr_neighbours = get_number_neighbours_cell(nr_rows, nr_cols, grid, row, column)
-#     print "Final row "+ str(row)+ " col "+ str(column) + " neighbours " + str(nr_neighbours)
     if (nr_neighbours < 2):
         return 0
     if (grid[row][column] == 1  and (nr_neighbours == 2 or nr_neighbours == 3)):
